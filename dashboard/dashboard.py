@@ -6,7 +6,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set_theme(style='dark')
 
-df = pd.read_csv('./main_data.csv')
+df = pd.read_csv('dashboard/main_data.csv')
 df['dteday'] = pd.to_datetime(df['dteday'])
 
 def create_monthly_df(df):
